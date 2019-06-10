@@ -7,179 +7,48 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>224</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>NetworkBuilder</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="labelNodesCount">
+   <widget class="QLabel" name="labelSize">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>121</width>
+      <width>160</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Количество узлов</string>
+     <string>Размер сети</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBoxNodesCount">
+   <widget class="QSpinBox" name="spinBoxSize">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>250</x>
       <y>5</y>
       <width>113</width>
       <height>23</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QLabel" name="labelRoutersCount">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>141</width>
-      <height>16</height>
-     </rect>
+    <property name="minimum">
+     <number>3</number>
     </property>
-    <property name="text">
-     <string>Количество роутеров</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="spinBoxRoutersCount">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>35</y>
-      <width>113</width>
-      <height>23</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelHostPerRouter">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>70</y>
-      <width>211</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Количество хостов на 1 роутер</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="spinBoxHostsPerRouter">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>65</y>
-      <width>113</width>
-      <height>23</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelPackageName">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>100</y>
-      <width>111</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Название пакета</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEditPackageName">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>95</y>
-      <width>113</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelIniName">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>160</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Название ini файла</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEditIniName">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>155</y>
-      <width>113</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>omnetpp.ini</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelNedName">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>190</y>
-      <width>131</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Название ned файла</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEditNedName">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>185</y>
-      <width>113</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>network.ned</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButtonCreate">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>220</y>
-      <width>80</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Создать</string>
+    <property name="maximum">
+     <number>1000</number>
     </property>
    </widget>
    <widget class="QLabel" name="labelNetworkName">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>130</y>
-      <width>101</width>
+      <y>40</y>
+      <width>111</width>
       <height>16</height>
      </rect>
     </property>
@@ -190,18 +59,127 @@
    <widget class="QLineEdit" name="lineEditNetworkName">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>125</y>
+      <x>250</x>
+      <y>35</y>
       <width>113</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>SimpleNetwork</string>
+     <string>MyNetwork</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPackageName_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Название пакета</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPackageName">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>65</y>
+      <width>113</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mymodel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelIniFileName">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Название ini-файла</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditIniFileName">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>95</y>
+      <width>113</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>omnetpp.ini</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxParsim">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Параллельная симуляция</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelNodeCount">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Количество вычислительных узлов</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxNodesCount">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>155</y>
+      <width>113</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCreate">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>190</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Создать</string>
     </property>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
